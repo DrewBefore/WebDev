@@ -43,9 +43,6 @@ li {
     height: 40px;
     line-height: 40px;
     color: #666;
-}
-
-li:hover {
     cursor: pointer;
 }
 
