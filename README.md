@@ -6,4 +6,4 @@ Random WebDev Projects
 
 [toDo List](https://drewbefore.github.io/WebDev/toDo/)
 
-[patatap Clone](https://drewbefore.github.io/WebDev/PATATAP/circles)
+[patatap Clone](https://drewbefore.github.io/WebDev/patatap/circles)
