@@ -45,6 +45,10 @@ li {
     color: #666;
 }
 
+li:hover {
+    cursor: pointer;
+}
+
 input {
     font-size: 18px;
     background-color: #f7f7f7;
