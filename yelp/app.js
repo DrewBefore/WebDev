@@ -14,6 +14,7 @@ var commentRoutes = require("./routes/comments");
 var campgroundRoutes = require("./routes/campgrounds");
 var indexRoutes = require("./routes/index");
 
+//DATABASEURL = url from mongolab
 mongoose.connect(process.env.DATABASEURL);
 var bodyParser = require("body-parser");
 
