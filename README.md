@@ -1,7 +1,7 @@
 # WebDev
 Random WebDev Projects
 
-[YelpCamp Clone] (https://yelp-drewb4.herokuapp.com/)
+[YelpCamp Clone](https://yelp-drewb4.herokuapp.com/)
 
 [colorGame](https://drewbefore.github.io/WebDev/colorGame/index)
 
