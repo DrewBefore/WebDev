@@ -65,7 +65,7 @@ function moveEverything() {
     computerMovement();
     ballX += ballSpeedX;
     ballY += ballSpeedY;
-    if(ballX < 0) {
+    if(ballX < 0 + 15) {
         if (ballY > paddle1Y && ballY < paddle1Y + PADDLE_HEIGHT) {
             ballSpeedX = -ballSpeedX;
             var deltaY = ballY -(paddle1Y+PADDLE_HEIGHT/2);
@@ -75,7 +75,7 @@ function moveEverything() {
             ballReset();
         }
     }
-    if(ballX > canvas.width) {
+    if(ballX > canvas.width - 15) {
         if (ballY > paddle2Y && ballY < paddle2Y + PADDLE_HEIGHT) {
             ballSpeedX = -ballSpeedX;
             var deltaY = ballY -(paddle2Y+PADDLE_HEIGHT/2);
