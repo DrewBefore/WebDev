@@ -1,0 +1,27 @@
+{
+  "name": "WebDev",
+  "version": "1.0.0",
+  "description": "Random WebDev Projects",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.15.4",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "index": "script.jsx",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/drewbefore/webdev.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/drewbefore/webdev/issues"
+  },
+  "homepage": "https://github.com/drewbefore/webdev#readme"
+}
