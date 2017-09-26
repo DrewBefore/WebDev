@@ -1,8 +1,9 @@
+import { SignupFormComponent } from './signup-form/signup-form.component';
 import { AuthorsService } from './authors/authors.service';
 import { CoursesService } from './courses.service';
 import { CoursesComponent } from './courses.component';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
@@ -19,6 +20,7 @@ import { UdemyFormComponent } from './udemy-form/udemy-form.component';
 @NgModule({
   declarations: [
     AppComponent,
+    SignupFormComponent,
     CoursesComponent,
     CourseComponent,
     AuthorComponent,
@@ -32,6 +34,7 @@ import { UdemyFormComponent } from './udemy-form/udemy-form.component';
   ],
   imports: [
     FormsModule,
+    ReactiveFormsModule,
     BrowserModule
   ],
   providers: [CoursesService,
