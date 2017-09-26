@@ -11,6 +11,10 @@ import { AuthorComponent } from './author/author.component';
 import { FavoriteComponent } from './favorite/favorite.component';
 import { TitleCasePipe } from './title-case.pipe';
 import { LikeComponent } from './like/like.component';
+import { InputFormatDirective } from './input-format.directive';
+import { ZippyComponent } from './zippy/zippy.component';
+import { ContactFormComponent } from './contact-form/contact-form.component';
+import { UdemyFormComponent } from './udemy-form/udemy-form.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +24,11 @@ import { LikeComponent } from './like/like.component';
     AuthorComponent,
     FavoriteComponent,
     TitleCasePipe,
-    LikeComponent
+    LikeComponent,
+    InputFormatDirective,
+    ZippyComponent,
+    ContactFormComponent,
+    UdemyFormComponent
   ],
   imports: [
     FormsModule,
