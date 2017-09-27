@@ -1,3 +1,4 @@
+import { HttpModule } from '@angular/http';
 import { SignupFormComponent } from './signup-form/signup-form.component';
 import { AuthorsService } from './authors/authors.service';
 import { CoursesService } from './courses.service';
@@ -16,6 +17,8 @@ import { InputFormatDirective } from './input-format.directive';
 import { ZippyComponent } from './zippy/zippy.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { UdemyFormComponent } from './udemy-form/udemy-form.component';
+import { ChangePasswordComponent } from './change-password/change-password.component';
+import { PostsComponent } from './posts/posts.component';
 
 @NgModule({
   declarations: [
@@ -30,10 +33,13 @@ import { UdemyFormComponent } from './udemy-form/udemy-form.component';
     InputFormatDirective,
     ZippyComponent,
     ContactFormComponent,
-    UdemyFormComponent
+    UdemyFormComponent,
+    ChangePasswordComponent,
+    PostsComponent
   ],
   imports: [
     FormsModule,
+    HttpModule,
     ReactiveFormsModule,
     BrowserModule
   ],
