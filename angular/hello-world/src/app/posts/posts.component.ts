@@ -26,13 +26,15 @@ export class PostsComponent implements OnInit {
 
   createPost(input: HTMLInputElement) {
     let post = { title: input.value}
+    this.posts.splice(0,0, post);
     input.value = "";
     this.service.create(post)
       .subscribe(
         response => {
           post['id'] = response.json().id;
-          this.posts.splice(0,0, post);
       }, (error: AppError) => {
+        this.posts.splice(0,1);
+
           if (error instanceof BadInput) {
             //this.form.setErrors(error.originalError);
           } else {
@@ -50,13 +52,13 @@ export class PostsComponent implements OnInit {
   }
 
   deletePost(post) {
+    let index = this.posts.indexOf(post);
+    this.posts.splice(index, 1);
     this.service.delete(post)
-      .subscribe(
-        response => {
-        let index = this.posts.indexOf(post);
-        this.posts.splice(index, 1);
-      }, (error: AppError) => {
+      .subscribe(null,
+       (error: AppError) => {
         if (error instanceof NotFoundError) {
+          this.posts.splice(index, 0, post);
           alert("this Post has already been deleted.");
         } else {
             throw error;
