@@ -1,55 +1,28 @@
-.menu {
-    border: 5px solid gray;
-    padding: 15px 50px;
-    box-shadow: 5px 13px 21px -5px rgba(0,0,0,0.75);
-}
-  
-canvas { 
-    background: #eee; display: block; margin: 0 auto; 
-}
-
-html, body {
-    margin: 0;
-}
-
-#score {
-    color: blue;
-    font-size: 3rem;
-    display: inline-block;
-    margin-top: 5px;
-}
-
 html {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     height: 100%;
-}
-
-body {
+  }
+  
+  body {
     overflow: hidden;
     height: inherit;
-}
-
-h1 {
-    font-size: 3rem;
-    letter-spacing: -1px;
-    position: absolute;
+  }
+  
+  html, body {
     margin: 0;
-    top: -4px;
-    right: 5px;
-    color: transparent;
-    text-shadow: 0 0 4px white;
-}
-
-p {
-    margin: 0;
-    top: 35px;
-    right: 5px;
-    color: #aaa;
-    font-size: 2rem;
-}
-
-button {
+  }
+  
+  canvas { 
+    background: #eee; display: block; margin: 0 auto; 
+    touch-action: none;
+  }
+  
+  button {
+    position: relative;
+    top: 0px;
     float: right;
+    width: 250px;
+    border-radius: 5px;
     background-color: #4CAF50; /* Green */
     border: none;
     color: white;
@@ -57,15 +30,46 @@ button {
     text-align: center;
     text-decoration: none;
     font-size: 2rem;
-}
-
-button:hover {
+    opacity: .9;
+    box-shadow: 0px 8px 0px lightGreen;
+  }
+  
+  button:active {
+    top: 8px;
+    box-shadow: none;
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
+  button:hover {
+    opacity: 1;
     cursor: pointer;
-}
-
-.slider {
+  }
+  
+  .menu {
+    padding: 15px 50px;
+    box-shadow: 5px 13px 21px -5px rgba(0,0,0,0.75);
+    margin-bottom: 0;
+  } 
+  
+  #score {
+    color: white;
+    font-size: 4rem;
+    display: inline-block;
+    text-shadow: 0 0 5px #4CAF50;
+  }
+  
+  .speed {
+    margin: 0;
+    color: #4CAF50;
+    font-size: 2rem;
+  }
+  
+  .slider {
     -webkit-appearance: none;
-    margin: 10px 0;
+    margin: 15px 0 5px 0;
     width: 100%;
     height: 15px;
     border-radius: 5px;   
@@ -74,9 +78,13 @@ button:hover {
     opacity: 0.7;
     -webkit-transition: .2s;
     transition: opacity .2s;
-}
-
-.slider::-webkit-slider-thumb {
+  }
+  
+  .slider:hover {
+    cursor: pointer;
+  }
+  
+  .slider::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
     width: 25px;
@@ -84,12 +92,13 @@ button:hover {
     border-radius: 50%; 
     background: #4CAF50;
     cursor: pointer;
-}
-
-.slider::-moz-range-thumb {
+  }
+  
+  .slider::-moz-range-thumb {
     width: 25px;
     height: 25px;
     border-radius: 50%;
     background: #4CAF50;
     cursor: pointer;
-}
+  }
+  

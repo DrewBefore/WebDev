@@ -4,25 +4,28 @@
 <head>
     <meta charset="utf-8">
     <title>Dot game</title>
+    <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
     <div class="container-fluid">
         <div class="row">
-            <div class="menu col-12">
-                <div id="score"></div>
+            <div class="menu jumbotron col-12">
+                <div id="score">Score</div>
                 <button type="button" value="pause" id="gameState">Play!</button>
                 <input type="range" min="10" max="100" value="12" class="slider" id="velocitySlider">
-                <p>Speed</p>
+                <p class="speed">Speed</p>
             </div>
         </div>
     </div>
 
-    <canvas></canvas>
-    <script src="index.js"></script>
+  <canvas></canvas>  
+  
+  <script src="index.js"></script>
 </body>
 
 </html>
