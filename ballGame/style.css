@@ -1,0 +1,95 @@
+.menu {
+    border: 5px solid gray;
+    padding: 15px 50px;
+    box-shadow: 5px 13px 21px -5px rgba(0,0,0,0.75);
+}
+  
+canvas { 
+    background: #eee; display: block; margin: 0 auto; 
+}
+
+html, body {
+    margin: 0;
+}
+
+#score {
+    color: blue;
+    font-size: 3rem;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+html {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    height: 100%;
+}
+
+body {
+    overflow: hidden;
+    height: inherit;
+}
+
+h1 {
+    font-size: 3rem;
+    letter-spacing: -1px;
+    position: absolute;
+    margin: 0;
+    top: -4px;
+    right: 5px;
+    color: transparent;
+    text-shadow: 0 0 4px white;
+}
+
+p {
+    margin: 0;
+    top: 35px;
+    right: 5px;
+    color: #aaa;
+    font-size: 2rem;
+}
+
+button {
+    float: right;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.slider {
+    -webkit-appearance: none;
+    margin: 10px 0;
+    width: 100%;
+    height: 15px;
+    border-radius: 5px;   
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%; 
+    background: #4CAF50;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #4CAF50;
+    cursor: pointer;
+}

@@ -1,0 +1,11 @@
+.liked {
+    color: deeppink;
+}
+
+.notLiked {
+    color: #ccc;
+}
+
+p {
+    color: black;
+}
